@@ -29,7 +29,7 @@ public class CuratorWatcherDemo {
 
     /**
      * PathChildrenCache 监听一个节点下的子节点的创建、删除、更新
-     * NodeCache 监听一个节点的更新和创建事件
+     *
      * TreeCache 综合PathChildrenCache 和 NodeCache的特性
      */
     /**
