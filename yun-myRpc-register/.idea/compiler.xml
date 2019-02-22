@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yun-myRpc-register" />
+        <module name="yun-myRpc-client" />
+        <module name="yun-myRpc-common" />
+        <module name="yun-myRpc-server" />
+        <module name="yun-myRpc-test" />
       </profile>
     </annotationProcessing>
   </component>

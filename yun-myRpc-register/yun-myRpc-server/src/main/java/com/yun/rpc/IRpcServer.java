@@ -1,4 +1,4 @@
-package java.com.yun.rpc;
+package com.yun.rpc;
 
 /**
  * @Project: yun-myRpc-register
@@ -8,6 +8,6 @@ package java.com.yun.rpc;
  */
 public interface IRpcServer {
 
-    public void publisher(Object service ,int port);
+    public void publisher();
 
 }

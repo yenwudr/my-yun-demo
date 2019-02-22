@@ -1,6 +1,7 @@
-package java.com.yun.rpc.model;
+package com.yun.rpc.model;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 /**
  * @Project: yun-myRpc-register
@@ -13,6 +14,7 @@ public class RpcRequest implements Serializable {
     private String className;
     private String methodName;
     private Object[] parameters;
+    private String version;
 
     public String getClassName() {
         return className;
@@ -36,5 +38,23 @@ public class RpcRequest implements Serializable {
 
     public void setParameters(Object[] parameters) {
         this.parameters = parameters;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    @Override
+    public String toString() {
+        return "RpcRequest{" +
+                "className='" + className + '\'' +
+                ", methodName='" + methodName + '\'' +
+                ", parameters=" + Arrays.toString(parameters) +
+                ", version='" + version + '\'' +
+                '}';
     }
 }
